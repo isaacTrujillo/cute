@@ -1,0 +1,90 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (5.2.0)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    awesome_print (1.8.0)
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
+    builder (3.2.3)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
+    colorize (0.8.1)
+    concurrent-ruby (1.0.5)
+    cute_logger (0.1.9)
+      awesome_print (~> 1)
+      colorize (~> 0.8.1)
+      utf8_converter (~> 0.1)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
+    docile (1.3.0)
+    equalizer (0.0.11)
+    grape (1.0.3)
+      activesupport
+      builder
+      mustermann-grape (~> 1.0.0)
+      rack (>= 1.3.0)
+      rack-accept
+      virtus (>= 1.0.0)
+    i18n (1.0.1)
+      concurrent-ruby (~> 1.0)
+    ice_nine (0.11.2)
+    json (2.1.0)
+    minitest (5.11.3)
+    mustermann (1.0.2)
+    mustermann-grape (1.0.0)
+      mustermann (~> 1.0.0)
+    mysql2 (0.5.1)
+    puma (3.11.4)
+    rack (2.0.5)
+    rack-accept (0.4.5)
+      rack (>= 0.4)
+    rack-minitest (0.0.10)
+      json
+      minitest (~> 5.0)
+      rack-test
+    rack-test (1.0.0)
+      rack (>= 1.0, < 3)
+    rake (12.3.1)
+    ruby-ant-server (0.4.1)
+      cute_logger (~> 0.1)
+    safe_yaml (1.0.4)
+    sequel (5.8.0)
+    simplecov (0.16.1)
+      docile (~> 1.1)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.2)
+    thread_safe (0.3.6)
+    tzinfo (1.2.5)
+      thread_safe (~> 0.1)
+    utf8_converter (0.1.1)
+    virtus (1.0.5)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+      equalizer (~> 0.0, >= 0.0.9)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  cute_logger!
+  grape!
+  minitest!
+  mysql2!
+  puma!
+  rack-minitest!
+  rake!
+  ruby-ant-server!
+  safe_yaml!
+  sequel!
+  simplecov!
+
+BUNDLED WITH
+   1.16.1
