@@ -1,0 +1,21 @@
+<div class="container">
+  <form novalidate>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" ng-model="user.name">
+  </div>
+  <div class="form-group">
+    <label for="institution">Institution</label>
+    <input type="text" class="form-control" id="institution" ng-model="user.institution">
+  </div>
+  <div class="form-group">
+    <label for="age">Age</label>
+    <input type="number" step="1" class="form-control" id="age" ng-model="user.age">
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" ng-model="user.email">
+  </div>
+  <button type="submit" class="btn btn-primary" ng-click="$ctrl.create(user)">create</button>
+</form>
+</div>

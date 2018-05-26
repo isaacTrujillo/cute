@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="text-center">
+    <a class="btn btn-primary" ui-sref="create-contest">Create Contest</a>
+  </div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Start</th>
+        <th>End</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="c in $ctrl.contests">
+        <td>{{c.name}}</td>
+        <td>{{c.description}}</td>
+        <td>{{c.start}}</td>
+        <td>{{c.end}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

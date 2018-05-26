@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="text-center">
+    <a class="btn btn-primary" ui-sref="create-user">Create User</a>
+  </div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Institution</th>
+        <th>Register</th>
+        <th>Age</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="p in $ctrl.users">
+        <td>{{p.name}}</td>
+        <td>{{p.institution}}</td>
+        <td>{{p.register}}</td>
+        <td>{{p.age}}</td>
+        <td>{{p.email}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

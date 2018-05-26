@@ -1,0 +1,21 @@
+<div class="container">
+  <form novalidate>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" ng-model="contest.name">
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <input type="text" class="form-control" id="description" ng-model="contest.description">
+  </div>
+  <div class="form-group">
+    <label for="start">Start</label>
+    <input type="text" class="form-control" id="start" ng-model="contest.start">
+  </div>
+  <div class="form-group">
+    <label for="end">End</label>
+    <input type="text" class="form-control" id="end" ng-model="contest.end">
+  </div>
+  <button type="submit" class="btn btn-primary" ng-click="$ctrl.create(contest)">create</button>
+</form>
+</div>
