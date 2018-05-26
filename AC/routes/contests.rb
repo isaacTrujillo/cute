@@ -26,6 +26,14 @@ module Routes
           end
         end
 
+        route_param :user do
+          post do
+            process_request do
+              Controller::Contest.register_user(params);
+            end
+          end
+        end
+
       end
     end
   end
