@@ -8,4 +8,8 @@ Sequel.migration do
       String :email, null: false
     end
   end
+
+  down do
+    drop_table(:user)
+  end
 end

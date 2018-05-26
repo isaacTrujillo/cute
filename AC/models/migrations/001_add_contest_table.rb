@@ -7,4 +7,8 @@ Sequel.migration do
       DateTime :end, null: false
     end
   end
+
+  down do
+    drop_table(:contest)
+  end
 end

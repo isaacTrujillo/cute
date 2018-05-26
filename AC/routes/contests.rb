@@ -2,7 +2,6 @@ require 'grape'
 
 require './controller/contest'
 
-Services.configure!
 module Routes
   class Contests < Grape::API
     namespace :contest do

@@ -1,8 +1,7 @@
 require 'grape'
 
-require './controller/user'
+require './controller/chat'
 
-Services.configure!
 module Routes
   class Chats < Grape::API
     namespace :chat do

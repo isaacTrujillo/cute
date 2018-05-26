@@ -7,7 +7,7 @@ module Controller
       def create(chat)
         db = resource(:database)
         created = Time.now
-        id = db.insert(user: chat[:user], created: created)
+        id = db.insert(user_name: chat[:user], created: created)
         new(chat[:user], created)
       end
 
@@ -16,25 +16,25 @@ module Controller
       end
 
       def get_by_id(id)
-        data = resource(:database).where(name: name).first
+        data = resource(:database).where(id: id).first
           from_database_record(data)
       end
 
       private
 
       def from_database_record(data)
-        new(data[:user], data[:created])
+        new(data[:user_name], data[:created])
       end
     end
 
     def initialize(user, created)
-      @user = user
+      @user_name = user
       @created = created
     end
 
     def to_json(options)
       {
-        user: @user,
+        user_name: @user_name,
         created: @created
       }.to_json(options)
     end
